@@ -13,7 +13,7 @@ export class UsersService {
       ...userDTO,
     });
   }
-  async findOne(username: string) {
-    return await this.userModel.findOne({ username }).lean();
+  async findOne(email: string) {
+    return await this.userModel.findOne({ email }).lean();
   }
 }
